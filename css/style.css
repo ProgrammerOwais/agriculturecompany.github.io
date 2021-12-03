@@ -273,6 +273,11 @@ body {
 
 
 
+	  .parent {
+		  background-repeat: no-repeat;
+		  background-position: center center;
+		  background-size: cover;
+	  }
 	.sec2-carousel {
 		display: flex;
 		flex-direction: column;
