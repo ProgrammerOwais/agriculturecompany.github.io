@@ -108,6 +108,7 @@ function currentSlide(n) {
 function showSlides(n) {
 	var i;
 	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
 	//   var dots = document.getElementsByClassName("dot");
 	if (n > slides.length) {
 		slideIndex = 1
@@ -118,8 +119,33 @@ function showSlides(n) {
 	for (i = 0; i < slides.length; i++) {
 		slides[i].style.display = "none";
 	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" dotActive", "");
+	}
 	slides[slideIndex - 1].style.display = "block";
+	dots[slideIndex-1].className += " dotActive";
 }
+/*************************************************** Video lightbox*************************************** */
+let videoBtn = document.querySelector('.video1');
+let videoDiv = document.querySelector('.sec2-img1');
+let closeLightbox = document.querySelector('.close-lightbox');
+console.log(videoBtn);
+// videoBtn.addEventListener("click", () => {
+// 	videoDiv.classList.add('lightbox');
+
+// })
+// closeLightbox.addEventListener('click', ()=> {
+// 	videoDiv.classList.remove('lightbox');
+
+// })
+function openModal() {
+	document.getElementById("myModal").style.display = "block";
+	document.getElementById("myModal").style.opacity = "1";
+  }
+  
+  function closeModal() {
+	document.getElementById("myModal").style.display = "none";
+  }
 
 /****************************************************** 	QUIZ SECTION ACCORDIAN FUNCTIONALITY ******************************/
 

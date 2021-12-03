@@ -56,13 +56,23 @@
 		</div>
 		<div class="section2  slideshow-container">
 			<div class="sec2-img1">
-				<img src="images/video.jpg" class="video1" alt="video-sec">
-				<img src="images/video2.png" class="video2" alt="video-sec">
-			</div>
-			<div class="parent" style="background-image: url('images/bgimg1.png');"> 
+				<!-- <p class="close-lightbox">X</p> -->
+				<img src="images/video.jpg" class="video1" onclick="openModal()" alt="video-sec">
+				<img src="images/video2.png" class="video2" onclick="openModal()" alt="video-sec">
+				
+              <div id="myModal" class="modal">
+               	<span class="close cursor" onclick="closeModal()">&times;</span>
+            	<div class="modal-content">
+	            <div class="myVideo">
+		   <!-- <div class="numbertext">1 / 4</div> -->
+		       <img src="images/video.jpg" class="lightbox-video">
+	           </div>
+	  </div>
+        	</div>
+            </div>
+			<div class="parent" style="background-image: url('./images/bgimg1.png');"> 
 				<div class="sec2-carousel" style="background-image: linear-gradient(to right , white, white , white);">
 					<div class="text-container">
-						
 				       <span class="arrow arrow-left" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></span>
 				       <span class="arrow arrow-right" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></span>
 						<div class="text-area mySlides fade">
@@ -81,6 +91,12 @@
 							<h2 class="h2">KEY CHARACTERISTICS</h2>
 							<p class="para">Prefer working with a supplier who has previously provided a smooth process</p>
 						</div>
+						<div class="dots">
+							<span class="dot" onclick="currentSlide(1)"></span> 
+							<span class="dot" onclick="currentSlide(2)"></span> 
+							<span class="dot" onclick="currentSlide(3)"></span> 
+					  </div>
+						  
 					</div>
 				</div>
 				
