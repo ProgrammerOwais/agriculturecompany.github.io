@@ -1331,9 +1331,9 @@ body {
   } */
   .sec2-h2 {
     position: absolute;
-    top: 25%;
+    top: 22%;
     left: 50%;
-    transform: translate(-50%, -25%);
+    transform: translate(-50%, -22%);
     font-size: 1.8rem;
     color: white;
   }
