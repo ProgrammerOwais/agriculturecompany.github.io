@@ -201,7 +201,7 @@ body {
   display: none;
 }
 /********************************* lightbox **********************************/
-.modal {
+.modal1 {
   display: none;
   position: fixed;
   z-index: 10;
@@ -216,7 +216,7 @@ body {
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content1 {
   position: relative;
   margin: auto;
   padding: 0;
@@ -225,7 +225,7 @@ body {
 }
 
 /* The Close Button */
-.close {
+.close1 {
   color: white;
   position: absolute;
   top: 10px;
@@ -233,8 +233,8 @@ body {
   font-size: 5rem;
 }
 
-.close:hover,
-.close:focus {
+.close1:hover,
+.close1:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
@@ -917,7 +917,7 @@ body {
   .arrow-right {
     right: 0rem;
   }
-  .close {
+  .close1 {
     font-size: 4rem;
   }
   /************************ SECTION 3 ************/
@@ -1295,7 +1295,7 @@ body {
     cursor: pointer;
     opacity: 0.9;
   }
-  .close {
+  .close1 {
     font-size: 3rem;
   }
   .lightbox-video {
@@ -1356,7 +1356,7 @@ body {
     font-weight: normal;
     color: white;
     position: relative;
-    left: 17%;
+    left: 15%;
   }
   /* .arrow {
     top: 50%;
