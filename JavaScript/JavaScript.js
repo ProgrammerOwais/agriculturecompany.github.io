@@ -69,7 +69,6 @@ decisionBtn.addEventListener("click", () => {
 
 /*************************************************** Section 4 accordian for mobile  ************************************/
 
-/// text divs
 let infoDiv2 = document.querySelector(".mobile-info");
 let decision2 = document.querySelector(".mobile-decision");
 let order2 = document.querySelector(".mobile-order");
@@ -92,51 +91,8 @@ decisionBtn.addEventListener("click", () => {
   decision2.classList.toggle("hide-show");
 });
 
-/*************************************************** slide show******************************************** */
-// var slideIndex = 1;
-// showSlides(slideIndex);
-
-// function plusSlides(n) {
-//   showSlides((slideIndex += n));
-// }
-
-// function currentSlide(n) {
-//   showSlides((slideIndex = n));
-// }
-
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
-//   //   var dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {
-//     slideIndex = 1;
-//   }
-//   if (n < 1) {
-//     slideIndex = slides.length;
-//   }
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].classList.remove("slide-toggle");
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" dotActive", "");
-//   }
-//   slides[slideIndex - 1].classList.add("slide-toggle");
-//   dots[slideIndex - 1].className += " dotActive";
-// }
 /*************************************************** Video lightbox*************************************** */
-let videoBtn = document.querySelector(".video1");
-let videoDiv = document.querySelector(".sec2-img1");
-let closeLightbox = document.querySelector(".close-lightbox");
-console.log(videoBtn);
-// videoBtn.addEventListener("click", () => {
-// 	videoDiv.classList.add('lightbox');
 
-// })
-// closeLightbox.addEventListener('click', ()=> {
-// 	videoDiv.classList.remove('lightbox');
-
-// })
 function openModal() {
   document.getElementById("myModal").style.display = "block";
   document.getElementById("myModal").style.opacity = "1";
