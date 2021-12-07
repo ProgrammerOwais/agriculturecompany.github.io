@@ -1892,12 +1892,12 @@ body {
       #ad172b,
       #ad172b
     ) !important;
-    height: 280px;
+    height: 300px;
   }
   /********************* p1-section1 ******************/
   .p1-heading1 {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     font-size: 1.6rem;
   }
   .p1-heading2 {
@@ -1906,6 +1906,7 @@ body {
   }
   .p1-hero-btn {
     margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
   /********************* p1-section2 ******************/
   .p1-section2 {
