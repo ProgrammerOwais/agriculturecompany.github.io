@@ -55,9 +55,26 @@
             <h2 class="heading2 p1-heading2">
               Leverage insights from 4 customer segments
             </h2>
-            <button type="button" class="p1-hero-btn">
+            <button type="button" class="p1-hero-btn" onclick="openModal()">
               WATCH THE INTRO VIDEO
             </button>
+            <div id="myModal" class="modal1">
+              <span class="close1 cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content1">
+                <div class="myVideo">
+                  <iframe
+                    class="lightbox-video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/AYDmsaiWY9U"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -75,84 +92,94 @@
       <hr class="line container p1-line" />
       <div class="p1-section3">
         <h2 class="heading2 p1-sec3-heading2">The benefits of the customer</h2>
-        <div class="p1-sec3-row">
-          <div class="p1-sec3-col1">
-            <div class="p1-sec3-logo">
-              <img
-                src="./images/logop3.png"
-                class="p1-logo p1-logo1"
-                alt="logo"
-              />
+
+        <div class="p1-sec3-div">
+          <div class="p1-sec3-row">
+            <div class="p1-sec3-col1">
+              <div class="p1-sec3-logo">
+                <img
+                  src="./images/logop3.png"
+                  class="p1-logo p1-logo1"
+                  alt="logo"
+                />
+              </div>
+              <p class="para p1-sec3-para">
+                <span class="sec3-heading">Save time and effort</span> by
+                identifying early in the sales process what matters to a
+                customer and focusing efforts on the messages and moments in the
+                journey that matter most
+              </p>
             </div>
-            <p class="para p1-sec3-para">
-              <span class="sec3-heading">Save time and effort</span> by
-              identifying early in the sales process what matters to a customer
-              and focusing efforts on the messages and moments in the journey
-              that matter most
-            </p>
-          </div>
-          <div class="p1-sec3-col2">
-            <div class="p1-sec3-logo">
-              <img
-                src="./images/logop2.png"
-                class="p1-logo p1-logo1"
-                alt="logo"
-              />
+            <div class="p1-sec3-col2">
+              <div class="p1-sec3-logo">
+                <img
+                  src="./images/logop2.png"
+                  class="p1-logo p1-logo1"
+                  alt="logo"
+                />
+              </div>
+              <p class="para p1-sec3-para">
+                <span class="sec3-heading">Be more successful </span>by
+                emphasizing the specific value the product delivers to the
+                customer
+              </p>
             </div>
-            <p class="para p1-sec3-para">
-              <span class="sec3-heading">Be more successful</span>by emphasizing
-              the specific value the product delivers to the customer
-            </p>
-          </div>
-          <div class="p1-sec3-col3">
-            <div class="p1-sec3-logo">
-              <img
-                src="./images/logop1.png"
-                class="p1-logo p1-logo1"
-                alt="logo"
-              />
+            <div class="p1-sec3-col3">
+              <div class="p1-sec3-logo">
+                <img
+                  src="./images/logop1.png"
+                  class="p1-logo p1-logo1"
+                  alt="logo"
+                />
+              </div>
+              <p class="para p1-sec3-para">
+                <span class="sec3-heading"
+                  >Exchange best-practices and onboard new people more easily </span
+                >by having a common vocabulary how to speak about our end
+                customers
+              </p>
             </div>
-            <p class="para p1-sec3-para">
-              <span class="sec3-heading"
-                >Exchange best-practices and onboard new people more easily </span
-              >by having a common vocabulary how to speak about our end
-              customers
-            </p>
           </div>
         </div>
       </div>
-      <div class="p1-section4">
-        <div class="p1-picture">
-          <img
-            src="./images/image4.png"
-            class="p1-sec4-pictures"
-            alt="images"
-          />
-          <h3 class="p1-sec4-heading p4-color">THE efficiency masters</h3>
-        </div>
-        <div class="p1-picture">
-          <img
-            src="./images/image2.png"
-            class="p1-sec4-pictures"
-            alt="images"
-          />
-          <h3 class="p1-sec4-heading p3-color">THE satisfied traditionalist</h3>
-        </div>
-        <div class="p1-picture">
-          <img
-            src="./images/image1.png"
-            class="p1-sec4-pictures"
-            alt="images"
-          />
-          <h3 class="p1-sec4-heading p1-color">THE ABSENTEE OPERATOR</h3>
-        </div>
-        <div class="p1-picture">
-          <img
-            src="./images/image3.png"
-            class="p1-sec4-pictures"
-            alt="images"
-          />
-          <h3 class="p1-sec4-heading p2-color">The Sophisticate</h3>
+      <div class="p1-Section4">
+        <h2 class="heading2 p1-sec4-heading1">Meet the 4 customer!</h2>
+
+        <div class="p1-section4">
+          <div class="p1-picture">
+            <img
+              src="./images/image4.png"
+              class="p1-sec4-pictures"
+              alt="images"
+            />
+            <h3 class="p1-sec4-heading p4-color">THE efficiency masters</h3>
+          </div>
+          <div class="p1-picture">
+            <img
+              src="./images/image2.png"
+              class="p1-sec4-pictures"
+              alt="images"
+            />
+            <h3 class="p1-sec4-heading p3-color">
+              THE satisfied traditionalist
+            </h3>
+          </div>
+          <div class="p1-picture">
+            <img
+              src="./images/image1.png"
+              class="p1-sec4-pictures"
+              alt="images"
+            />
+            <h3 class="p1-sec4-heading p1-color">THE ABSENTEE OPERATOR</h3>
+          </div>
+          <div class="p1-picture">
+            <img
+              src="./images/image3.png"
+              class="p1-sec4-pictures"
+              alt="images"
+            />
+            <h3 class="p1-sec4-heading p2-color">The Sophisticate</h3>
+          </div>
         </div>
       </div>
       <div class="p1-section5">
@@ -168,5 +195,7 @@
     <footer>
       <h2 class="p1-section6-heading">FOOTER</h2>
     </footer>
+
+    <script src="./JavaScript/main.js"></script>
   </body>
 </html>
