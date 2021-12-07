@@ -699,21 +699,29 @@ body {
 .sec4-accordian {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+  margin-bottom: 1rem;
 }
 .accordianCol-1 {
-  width: 10%;
+  width: 5%;
+  /* border: 1px solid black; */
 }
 .sec4-logo {
   width: 100%;
   max-width: 100px;
+  /* border: 1px solid blue; */
 }
 .accordianCol-2 {
-  width: 88%;
+  width: 90%;
+  /* border: 1px solid yellow; */
 }
 .accordian-para {
   width: 75%;
   font-size: 1.4rem;
   color: var(--heading2);
+  height: max-content;
+  margin-bottom: 0;
 }
 .line {
   width: 150px;
@@ -936,6 +944,22 @@ body {
 .radio-div.active .sub {
   background-color: var(--heading1);
 }
+/********************************************* pages colors ***********************************/
+.p1-color {
+  color: var(--heading1);
+}
+.p2-color {
+  color: var(--p2heading1);
+}
+.p2-bg {
+  background-color: var(--p2heading1);
+}
+.p3-color {
+  color: var(--p3heading1);
+}
+.p4-color {
+  color: var(--p4heading1);
+}
 
 @media (max-width: 1200px) {
   * {
@@ -1055,18 +1079,18 @@ body {
   }
   .accordianCol-1 {
     /* border: 1px solid red; */
-    width: 10%;
+    width: 7%;
   }
   .accordianCol-2 {
     /* border: 1px solid yellow; */
-    width: 85%;
+    width: 90%;
   }
   .accordian-para {
     width: 90%;
     font-size: 1.3rem;
   }
   .sec4-logo {
-    width: 60px;
+    max-width: 60px;
   }
   .line {
     width: 20%;
@@ -1209,7 +1233,7 @@ body {
   }
   .accordianCol-2 {
     /* border: 2px solid black; */
-    width: 85%;
+    width: 90%;
   }
   .accordian-para {
     font-size: 1.1rem;
@@ -1633,8 +1657,9 @@ body {
     /* border: 1px solid red; */
     display: block;
     width: 100%;
-    max-width: 220px;
+    max-width: 170px;
     margin: 0 auto;
+    margin-bottom: 2rem;
   }
   .video2:hover {
     cursor: pointer;
@@ -1719,6 +1744,8 @@ body {
     padding: 1.5rem 1rem;
     margin-bottom: 0.5rem;
     text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 0.8px;
   }
   .mobile-info,
   .mobile-decision,
@@ -1768,10 +1795,12 @@ body {
     /* border: 1px solid red; */
   }
   .accordianCol-1 {
+    /* border: 1px solid red; */
     width: 15%;
     margin-right: 0.5rem;
   }
   .accordianCol-2 {
+    /* border: 1px solid black; */
     width: 85%;
   }
   .sec4-logo {
@@ -2004,9 +2033,43 @@ body {
   .p1-section6-heading {
     font-size: 30px;
   }
+  /************************************ pages colors ********************/
+  .p1-color {
+    color: var(--heading1);
+  }
+  .p2-color {
+    color: var(--p2heading1);
+  }
+  .p2-bg {
+    background-color: var(--p2heading1);
+  }
+  .section3 .p2-color {
+    color: var(--p2heading1);
+  }
+  .col1 .p2-bg-color.bg-color1 {
+    background-color: var(--p2heading1);
+    color: white;
+  }
+
+  .col1 .p2-bg-color.bg-color2 {
+    background-color: var(--p2heading1);
+    color: white;
+  }
+  .p2-bg-color ~ .mobile-info,
+  .p2-bg-color ~ .mobile-decision,
+  .p2-bg-color ~ .mobile-order,
+  .p2-bg-color ~ .mobile-relationship {
+    box-shadow: 1px 1px 2px var(--p2heading1), -1px -1px 2px var(--p2heading1);
+  }
+  .p3-color {
+    color: var(--p3heading1);
+  }
+  .p4-color {
+    color: var(--p4heading1);
+  }
 }
 @media (max-width: 395px) {
-  /************************************ sec 1**********/
+  /************************************ section 1**********/
 
   .heading1 {
     font-size: 30px;
