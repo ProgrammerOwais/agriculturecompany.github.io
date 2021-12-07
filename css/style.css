@@ -339,18 +339,7 @@ body {
   font-weight: 700;
   margin-left: 0.3rem;
 }
-.p1-color {
-  color: var(--heading1);
-}
-.p2-color {
-  color: var(--p2heading1);
-}
-.p3-color {
-  color: var(--p3heading1);
-}
-.p4-color {
-  color: var(--p4heading1);
-}
+
 /********************** P1-Section5 *******************/
 .p1-section5 {
   /* border: 1px solid red; */
@@ -959,6 +948,25 @@ body {
 }
 .p4-color {
   color: var(--p4heading1);
+}
+/************************** pages colors ***********************/
+.p1-color {
+  color: var(--heading1);
+}
+.p2-color {
+  color: var(--p2heading1);
+}
+.p3-color {
+  color: var(--p3heading1);
+}
+.p3-bg {
+  background-color: var(--p3heading1);
+}
+.p4-color {
+  color: var(--p4heading1);
+}
+.p4-bg {
+  background-color: var(--p4heading1);
 }
 
 @media (max-width: 1200px) {
@@ -1616,6 +1624,8 @@ body {
     width: 100%;
   }
   .section1 {
+    width: 92%;
+    margin: 0 auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -1688,12 +1698,12 @@ body {
     margin-bottom: 0rem;
   }
   .text-container {
-    width: 92%;
+    width: 98%;
   }
 
   .sec2-h2 {
     position: absolute;
-    top: 22%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -22%);
     font-size: 1.8rem;
@@ -1716,6 +1726,9 @@ body {
     left: 15%;
   }
   /**************************** section3 *************/
+  .section3 {
+    width: 98%;
+  }
 
   .section3 .heading2 {
     /* border: 1px solid red; */
@@ -1728,6 +1741,9 @@ body {
     font-size: 1.6rem;
   }
   /**************************** section4 *************/
+  .section4 {
+    width: 98%;
+  }
   .sec4-div {
     /* border: 1px solid black; */
     flex-direction: column;
@@ -1836,6 +1852,7 @@ body {
   /**************************** section5 *************/
   .section5 {
     /* border: 2px solid yellow; */
+    width: 98%;
     overflow-x: auto;
   }
   .sec-5 {
@@ -1859,9 +1876,9 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0.6rem 1.5rem;
-    padding: 2rem 2rem;
+    padding: 2rem;
     padding-left: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     margin: 0;
   }
   .sec5-logo {
@@ -1885,9 +1902,14 @@ body {
     width: 100%;
   }
   /**************************** section6 *************/
+  .section6 {
+    width: 98%;
+  }
+
   .bottombtn {
     text-align: center;
     font-size: 1.2rem;
+    width: 100%;
   }
   .section6 .heading1 {
     font-size: 26px;
@@ -1950,8 +1972,7 @@ body {
     font-size: 18px;
   }
   /********************* p1-section3 ******************/
-  .p1-section3 {
-  }
+
   .p1-sec3-heading2 {
     font-size: 22px;
     margin-bottom: 0.5rem;
@@ -2040,11 +2061,22 @@ body {
   .p2-color {
     color: var(--p2heading1);
   }
+  .text-container .p2-color {
+    color: white;
+  }
   .p2-bg {
     background-color: var(--p2heading1);
   }
   .section3 .p2-color {
     color: var(--p2heading1);
+  }
+  .p2-bgImg {
+    background-image: linear-gradient(
+      to right,
+      var(--p2heading1),
+      var(--p2heading1),
+      var(--p2heading1)
+    ) !important;
   }
   .col1 .p2-bg-color.bg-color1 {
     background-color: var(--p2heading1);
@@ -2064,8 +2096,72 @@ body {
   .p3-color {
     color: var(--p3heading1);
   }
+  .text-container .p3-color {
+    color: white;
+  }
+  .section3 .p3-color {
+    color: var(--p3heading1);
+  }
+  .p3-bgImg {
+    background-image: linear-gradient(
+      to right,
+      var(--p3heading1),
+      var(--p3heading1),
+      var(--p3heading1)
+    ) !important;
+  }
+  .p3-bg {
+    background-color: var(--p3heading1);
+  }
+  .col1 .p3-bg-color.bg-color1 {
+    background-color: var(--p3heading1);
+    color: white;
+  }
+
+  .col1 .p3-bg-color.bg-color2 {
+    background-color: var(--p3heading1);
+    color: white;
+  }
+  .p3-bg-color ~ .mobile-info,
+  .p3-bg-color ~ .mobile-decision,
+  .p3-bg-color ~ .mobile-order,
+  .p3-bg-color ~ .mobile-relationship {
+    box-shadow: 1px 1px 2px var(--p3heading1), -1px -1px 2px var(--p3heading1);
+  }
   .p4-color {
     color: var(--p4heading1);
+  }
+  .text-container .p4-color {
+    color: white;
+  }
+  .section3 .p4-color {
+    color: var(--p4heading1);
+  }
+  .p4-bgImg {
+    background-image: linear-gradient(
+      to right,
+      var(--p4heading1),
+      var(--p4heading1),
+      var(--p4heading1)
+    ) !important;
+  }
+  .p4-bg {
+    background-color: var(--p4heading1);
+  }
+  .col1 .p4-bg-color.bg-color1 {
+    background-color: var(--p4heading1);
+    color: white;
+  }
+
+  .col1 .p4-bg-color.bg-color2 {
+    background-color: var(--p4heading1);
+    color: white;
+  }
+  .p3-bg-color ~ .mobile-info,
+  .p3-bg-color ~ .mobile-decision,
+  .p3-bg-color ~ .mobile-order,
+  .p3-bg-color ~ .mobile-relationship {
+    box-shadow: 1px 1px 2px var(--p3heading1), -1px -1px 2px var(--p3heading1);
   }
 }
 @media (max-width: 395px) {
