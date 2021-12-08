@@ -15,6 +15,14 @@
   --heading2: #0f56b7;
   --heavy-para: #8e8e92;
 }
+/************************ HERE IS SOME IMPORTANT NOTES ABOUT CSS CLASSES ***********************/
+/************************ Every normal class is for all pages
+************************* the class which starts from "p1- or p1" is for main/homepage
+************************* the common classes is also for absentee operator page.
+************************* the class which starts form "p2-" is specific only for  sophisticate page 
+************************* the class which starts form "p3-" is specific only for  satisfied page 
+************************* the class which starts form "p4-" is specific only for 
+************************** traditionalist/efficiency master page *************************/
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -211,9 +219,7 @@ body {
   font-size: 28px;
   color: white;
   text-align: center;
-  border-top: 1px solid white;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
+  border: 1px solid white;
   padding: 1rem 3rem;
   display: block;
   margin: 4rem auto;
@@ -433,10 +439,6 @@ body {
   cursor: pointer;
 }
 
-.mySlides {
-  display: none;
-}
-
 .cursor {
   cursor: pointer;
 }
@@ -505,10 +507,8 @@ body {
   margin-bottom: 4rem;
 }
 .carousel-item p {
-  /* border: 1px solid red; */
   color: #787878;
   font-weight: 400;
-  width: 70%;
   font-size: 25px;
   text-align: center;
 }
@@ -527,80 +527,10 @@ body {
   width: 100% !important;
   margin-left: 0px !important;
 }
-/* 
-.arrow {
-  position: absolute;
-  top: 53%;
-  font-size: 1.7rem;
-  transform: translateY(-53%);
-  z-index: 5;
-  color: var(--light-para);
-}
-.arrow-right {
-  right: 0rem;
-}
-.arrow-right:hover {
-  cursor: pointer;
-}
-.arrow-left {
-  left: 0rem;
-}
-.arrow-left:hover {
-  cursor: pointer;
-} */
+
 .slideshow-container {
   position: relative;
 }
-.mySlides {
-  opacity: 0;
-  left: 20%;
-  transition: all 300ms;
-}
-.slide-toggle {
-  border: 1px solid red;
-  display: block;
-  left: 50%;
-  opacity: 1;
-}
-.fade {
-  /* -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s; */
-}
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* The dots/bullets/indicators */
-/* .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.dotActive,
-.dot:hover {
-  background-color: #717171;
-} */
 
 /***************************************** SECTION 3*************************************/
 .section3 {
@@ -792,10 +722,10 @@ body {
   outline: none;
   font-family: "Roboto Condensed";
 }
-.bottom-btn:hover,
-.bottom-btn:focus {
+.bottombtn:hover,
+.bottombtn:focus {
   background-color: var(--heading1);
-  opacity: 0.8;
+  opacity: 0.9;
   cursor: pointer;
 }
 .section6 .heading1 {
@@ -807,6 +737,15 @@ body {
 
 .quiz {
   margin-left: 0px !important;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+.quiz:hover,
+.quiz:focus {
+  opacity: 0.9;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 .bottombtn .arr {
   display: none;
@@ -891,38 +830,6 @@ body {
 .right-circle {
   background-color: green;
 }
-/* .all-paras {
-	display: none;
-} */
-/* .radios {
-	background-color: yellow;
-} */
-
-/* .paras {
-	display: none;
-} */
-/* .p-hide {
-	display: none;
-
-}
-.r-hide {
-	background-color: transparent;
-
-}
-.sub-rad-toggle {
-	background-color: var(--heading1);
-}
-.rad-para-toggle {
-	display: block;
-}
-.p-hide {
-	display: none;
-
-}
-.r-hide {
-	background-color: transparent;
-
-} */
 
 .radio-div.active .correct {
   display: inline;
@@ -943,11 +850,23 @@ body {
 .p2-bg {
   background-color: var(--p2heading1);
 }
+.p2-bg:hover,
+.p2-bg:focus {
+  background-color: var(--p2heading1);
+}
 .p3-color {
   color: var(--p3heading1);
 }
+.p3-bg:hover,
+.p3-bg:focus {
+  background-color: var(--p3heading1);
+}
 .p4-color {
   color: var(--p4heading1);
+}
+.p4-bg:hover,
+.p4-bg:focus {
+  background-color: var(--p4heading1);
 }
 /************************** pages colors ***********************/
 .p1-color {
@@ -1103,6 +1022,10 @@ body {
   .line {
     width: 20%;
     margin: 2rem auto;
+  }
+  /*********************************** section6 ***************/
+  .section6 .heading1 {
+    margin-top: 2.5rem;
   }
   /*********************************** p1-section1 ***************/
   .p1-heading1 {
@@ -1280,6 +1203,9 @@ body {
     margin: 0 auto;
     padding: 0.8rem;
     font-size: 1.7rem;
+  }
+  .quiz {
+    margin-bottom: 2rem;
   }
 
   /************************ SECTION 6 ************/
@@ -1913,6 +1839,7 @@ body {
   }
   .section6 .heading1 {
     font-size: 26px;
+    margin: 1rem auto;
   }
   .bottombtn .arr {
     position: relative;
