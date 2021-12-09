@@ -717,10 +717,11 @@ body {
   font-size: 55px;
   margin-bottom: 1.4rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 .sec6-para {
   margin-left: 0;
+  margin-bottom: 2rem;
 }
 .bottombtn {
   margin: 0 auto;
