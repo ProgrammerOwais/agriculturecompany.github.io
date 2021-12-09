@@ -708,8 +708,19 @@ body {
 }
 /************************************************* section6 **********************************/
 .section6 {
+  font-size: 35px;
   margin-bottom: 3rem;
   /* border: 1px solid red; */
+}
+.sec6-heading {
+  margin-left: 0;
+  font-size: 55px;
+  margin-bottom: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.sec6-para {
+  margin-left: 0;
 }
 .bottombtn {
   margin: 0 auto;
@@ -1034,6 +1045,12 @@ body {
   .section6 .heading1 {
     margin-top: 2.5rem;
   }
+  .sec6-heading {
+    font-size: 2rem;
+  }
+  .sec6-para {
+    font-size: 1.1rem;
+  }
   /*********************************** p1-section1 ***************/
   .p1-heading1 {
     text-align: center;
@@ -1224,6 +1241,12 @@ body {
     margin-bottom: 2rem;
     padding-left: 0rem;
     margin-left: 0;
+  }
+  .sec6-heading {
+    font-size: 1.7rem;
+  }
+  .sec6-para {
+    font-size: 1rem;
   }
   .radio {
     height: 18px;
@@ -1482,6 +1505,12 @@ body {
   .section6 .heading1 {
     font-size: 1.5rem;
   }
+  .sec6-heading {
+    font-size: 1.5rem;
+  }
+  /* .sec6-para {
+    font-size: 1.1rem;
+  } */
   .sec6-question {
     font-size: 1rem;
   }
@@ -1825,7 +1854,7 @@ body {
   .sec5-para {
     /* font-size: 1.2rem;
 		padding-bottom: 0rem; */
-    display: none;
+    /* display: none; */
   }
   .sec5-para2 {
     display: block;
@@ -1837,6 +1866,14 @@ body {
   /**************************** section6 *************/
   .section6 {
     width: 98%;
+  }
+  .sec6-heading {
+    font-size: 22px;
+    margin-bottom: 0.3rem;
+  }
+  .sec6-para {
+    font-size: 18px;
+    margin-bottom: 1rem;
   }
 
   .bottombtn {
