@@ -4,6 +4,7 @@ let hamburgerMenu = document.querySelector(".hamburger");
 hamburgerMenu.addEventListener("click", () => {
   hamburger.classList.toggle("active");
 });
+/****************************************************** 	QUIZ SECTION ACCORDIAN FUNCTIONALITY ******************************/
 
 let radioBtn = document.querySelectorAll(".radio");
 let radioPara = document.querySelectorAll(".radio-para");
