@@ -69,13 +69,11 @@ body {
   list-style-type: none;
   display: flex;
   margin-top: 1rem;
-  /* border: 1px solid black; */
   flex-direction: row;
   padding: 0.5rem;
   width: auto;
   position: relative;
   left: 0;
-  /* top: -0.3rem; */
   right: 0%;
   justify-content: space-between;
   align-items: center;
